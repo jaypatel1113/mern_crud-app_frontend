@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: #000;
+    color: #ddd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+input {
+    background: transparent;
+    color: #ddd;
+}
+
+table,
+form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    z-index: 1000 !important;
+    color: #ddd !important;
+}
+
+table {
+    margin-top: 5rem;
+}
+
+table tr th {
+    /* min-width: 20rem !important; */
+    font-size: 2rem;
+    font-variant: small-caps;
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+table thead tr {
+    border-bottom: 5px solid #ddd;
+    margin-bottom: 15px;
+}
+
+table tr {
+    font-size: 1.6rem;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+table:hover .eachItem {
+    opacity: 0.2;
+}
+
+table .eachItem:hover {
+    opacity: 1;
+}
+
+table .eachItem:hover {
+    background: none;
+    transform: scale(1.05);
+}
+
+table tr td,
+table tr th {
+    height: 4rem;
+    line-height: 4rem;
+}
+
+table tr a {
+    color: transparent !important;
+}
+
+.cont2 {
+    height: 100%;
+}
+
+form {
+    padding: 0 40px;
+    font-size: 1.5rem;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 20px;
+}
+
+.cont2 label {
+    font-size: 1.8rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cont2 input,
+.cont2 input:focus {
+    background: transparent;
+    padding: 5px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+    letter-spacing: .15rem;
+}
+
+.btn {
+    padding: 9px !important;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: var(--i) !important;
+    box-shadow: 0 0 5px var(--i),
+        0 0 10px var(--i),
+        0 0 20px var(--i),
+        0 0 40px var(--i);
+    transform: scale(0.9);
+}
+
+.notfound h1 .uniq {
+    font-variant: small-caps;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+.del {
+    margin-left: 15px !important;
+}
+
+h3.dgird {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+}
+
+h3 .minmin {
+    font-variant: small-caps;
+}
+
+@media screen and (max-width: 998px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    table tr th,
+    table tr td {
+        font-size: 1.5rem;
+    }
+
+    .btn,
+    .view.btn {
+        padding: 5px !important;
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    .view.btn,
+    button.view.back {
+        padding: 10px !important;
+    }
+
+    .del {
+        margin-left: 9px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 48%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .form_data form {
+        padding: 10px 3rem !important;
+    }
+
+    .form_data p {
+        font-size: 1.2rem;
+    }
+
+    .form_heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_data h1,
+    header nav h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 40%;
+    }
+
+    .form_data form .form_input input,
+    .form_data form .form_input label {
+        font-size: 1.8rem !important;
+    }
+
+    form .btn {
+        font-size: 2rem !important;
+    }
+
+    /* .view.btn, */
+    button.view.back {
+        padding: 8px 11px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 35%;
+    }
+
+    .form_data form .form_input input,
+    .form_data form .form_input label {
+        font-size: 1.8rem !important;
+    }
+
+    form .btn {
+        font-size: 2rem !important;
+    }
+
+    .btn {
+        padding: 3px !important;
+        margin: 0 3px;
+    }
+
+    .del {
+        margin-left: 5px !important;
+    }
+}

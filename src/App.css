@@ -1,0 +1,95 @@
+.mainmain {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    letter-spacing: .15rem;
+}
+
+.container1 {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 8rem - 2rem);
+    flex-direction: column;
+}
+
+.backrel {
+    position: relative;
+}
+
+.container1 .back {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.container1 .notfound {
+    z-index: 1000;
+    /* height: 8rem; */
+    padding: 2.1rem 3rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+}
+
+.row.row1>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.plpl {
+    padding-left: 7px !important;
+}
+
+.container1.padd .notfound {
+    padding: 4rem 6rem;
+}
+
+.left_view h3 {
+    font-size: 2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+form .sbtn {
+    padding: 5px !important;
+    font-size: 1.4rem !important;
+    width: auto !important;
+    letter-spacing: .15rem;
+}
+
+form .specbtn,
+.specbtn {
+    padding: 0 2.5rem;
+    font-size: 1.2rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-radius: 2.25rem;
+    backdrop-filter: blur(2px);
+    letter-spacing: .2rem;
+}
+
+.sbtn:hover,
+form .specbtn:hover,
+.specbtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    background: var(--i) !important;
+    box-shadow: 0 0 5px var(--i),
+        0 0 10px var(--i),
+        0 0 20px var(--i),
+        0 0 40px var(--i);
+    transform: scale(0.9);
+    color: #000;
+    font-weight: 700;
+}
