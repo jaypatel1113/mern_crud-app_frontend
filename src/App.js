@@ -6,6 +6,7 @@ import Register from "./components/Register";
 import Header from "./components/Header";
 import Edit from "./components/Edit";
 import Details from "./components/Details";
+import Error from "./components/Error";
 
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -27,6 +28,7 @@ const App = () => {
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/edit/:id" component={Edit} />
                     <Route exact path="/view/:id" component={Details} />
+                    <Route exact path="*" component={Error} />
                 </Switch>
             </div>
         </>

@@ -41,7 +41,7 @@ const Register = () => {
             toast.warn("Enter the Mobile Number");
         } else {
             setLoading(true);
-            const res = await fetch("https://mern-crud-webapp.herokuapp.com/register", {
+            const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

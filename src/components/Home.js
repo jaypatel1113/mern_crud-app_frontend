@@ -18,7 +18,7 @@ const Home = () => {
 
         setLoading(true);
         
-        const res = await fetch("https://mern-crud-webapp.herokuapp.com/getdata", {
+        const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/getdata`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -46,7 +46,7 @@ const Home = () => {
 
     const deleteuser = async (id) => {
 
-        const res2 = await fetch(`https://mern-crud-webapp.herokuapp.com/deleteuser/${id}`, {
+        const res2 = await fetch(`${process.env.REACT_APP_SERVER_URL}/deleteuser/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
