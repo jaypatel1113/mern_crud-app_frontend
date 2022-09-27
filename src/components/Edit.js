@@ -91,7 +91,7 @@ const Edit = () => {
             } else {
                 history.push("/");
                 toast.success(
-                    `${data2.name.split(" ")[0]} : Added Successfully 😉`
+                    `${data2.name.split(" ")[0]} : Updated Successfully 😉`
                 );
             }
         }
