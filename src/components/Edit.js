@@ -111,8 +111,8 @@ const Edit = () => {
                             </button>
                         </NavLink>
                         <div className="container cont2 p-5 d-flex justify-content-center align-item-center flex-column">
-                            <div class="mb-3 col-12">
-                                <label for="erno" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="erno" className="form-label">
                                     Enrollment Number
                                 </label>
                                 <input
@@ -120,13 +120,13 @@ const Edit = () => {
                                     value={inpval.erno}
                                     onChange={setdata}
                                     name="erno"
-                                    class="form-control"
+                                    className="form-control"
                                     id="erno"
                                     placeholder="Enter Enrollment Number"
                                 />
                             </div>
-                            <div class="mb-3 col-12">
-                                <label for="name" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="name" className="form-label">
                                     Name
                                 </label>
                                 <input
@@ -134,13 +134,13 @@ const Edit = () => {
                                     value={inpval.name}
                                     onChange={setdata}
                                     name="name"
-                                    class="form-control"
+                                    className="form-control"
                                     id="name"
                                     placeholder="Enter your Name"
                                 />
                             </div>
-                            <div class="mb-3 col-12">
-                                <label for="mobile" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="mobile" className="form-label">
                                     Mobile
                                 </label>
                                 <input
@@ -148,7 +148,7 @@ const Edit = () => {
                                     value={inpval.mobile}
                                     onChange={setdata}
                                     name="mobile"
-                                    class="form-control"
+                                    className="form-control"
                                     id="mobile"
                                     placeholder="Enter Mobile Number"
                                 />
@@ -156,7 +156,7 @@ const Edit = () => {
                             <button
                                 type="submit"
                                 onClick={updateuser}
-                                class="col-12 mt-5 sbtn specbtn"
+                                className="col-12 mt-5 sbtn specbtn"
                                 style={{ "--i": "#fd7e14" }}
                             >
                                 Submit

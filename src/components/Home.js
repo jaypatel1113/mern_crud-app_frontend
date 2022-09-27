@@ -79,7 +79,7 @@ const Home = () => {
                 ) : (
                     <div className="mt-5">
                     <div className="container">
-                        <table class="table">
+                        <table className="table">
                             <thead>
                                 <tr className="">
                                     <th scope="col">Enrollment Number</th>

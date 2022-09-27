@@ -6,7 +6,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 
-const Register = () => {
+const AddUser = () => {
     const [loading, setLoading] = useState(false);
 
     const history = useHistory();
@@ -52,6 +52,7 @@ const Register = () => {
                     mobile,
                 }),
             });
+            console.log(`${process.env.REACT_APP_SERVER_URL}/register`)
 
             setLoading(false);
             const data = await res.json();
@@ -83,8 +84,8 @@ const Register = () => {
                             </button>
                         </NavLink>
                         <div className="container cont2 p-5 d-flex justify-content-center align-item-center flex-column">
-                            <div class="mb-3 col-12">
-                                <label for="erno" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="erno" className="form-label">
                                     Enrollment Number
                                 </label>
                                 <input
@@ -92,13 +93,13 @@ const Register = () => {
                                     value={inpval.erno}
                                     onChange={setdata}
                                     name="erno"
-                                    class="form-control"
+                                    className="form-control"
                                     id="erno"
                                     placeholder="Enter Enrollment Number"
                                 />
                             </div>
-                            <div class="mb-3 col-12">
-                                <label for="name" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="name" className="form-label">
                                     Name
                                 </label>
                                 <input
@@ -106,13 +107,13 @@ const Register = () => {
                                     value={inpval.name}
                                     onChange={setdata}
                                     name="name"
-                                    class="form-control"
+                                    className="form-control"
                                     id="name"
                                     placeholder="Enter your Name"
                                 />
                             </div>
-                            <div class="mb-3 col-12">
-                                <label for="mobile" class="form-label">
+                            <div className="mb-3 col-12">
+                                <label for="mobile" className="form-label">
                                     Mobile
                                 </label>
                                 <input
@@ -120,7 +121,7 @@ const Register = () => {
                                     value={inpval.mobile}
                                     onChange={setdata}
                                     name="mobile"
-                                    class="form-control"
+                                    className="form-control"
                                     id="mobile"
                                     placeholder="Enter Mobile Number"
                                 />
@@ -128,7 +129,7 @@ const Register = () => {
                             <button
                                 type="submit"
                                 onClick={addinpdata}
-                                class="col-12 specbtn sbtn mt-5"
+                                className="col-12 specbtn sbtn mt-5"
                                 style={{ "--i": "#fd7e14" }}
                             >
                                 SUBMIT
@@ -153,4 +154,4 @@ const Register = () => {
         </>
     );
 };
-export default Register;
+export default AddUser;
